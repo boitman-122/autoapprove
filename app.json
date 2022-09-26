@@ -1,0 +1,38 @@
+{
+    "name": "Auto Approve Bot",
+    "description": "Telegram Bot. Create your Fork now.",
+    "keywords": [
+      "telegram",
+      "auto",
+      "request",
+      "accept",
+      "bot"
+    ],
+    "repository": "https://github.dev/boitman-122/autoapprove",
+    "env": {
+      "WEBHOOK": {
+        "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+        "value": "ANYTHING"
+      },
+      "BOT_TOKEN": {
+        "description": "Your bot token, as a string.",
+        "value": ""
+      },
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": ""
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": ""
+      },
+      "AUTH_USERS": {
+        "description": "allow only pre-defined users to use this bot",
+        "value": "1337144652"
+      }
+    },
+    "buildpacks": [{"url": "heroku/python"}],
+    "formation": {
+        "worker": {"quantity": 1,"size": "free"}
+    }
+  }
