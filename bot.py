@@ -1,7 +1,7 @@
 import time
 import asyncio
 from os import environ as evn
-from .database import Database
+from database import Database
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
