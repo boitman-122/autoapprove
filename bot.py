@@ -73,7 +73,7 @@ async def broadcast(c, m):
             print(f"{user_id} : {e}")
 
     async for user in users:
-        user = await send_msg(c, user_id)
+        user = await send_msg(c, user['id'])
         if user:
             success += 1
         else:
