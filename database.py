@@ -25,12 +25,12 @@ class Database:
 
 
     async def total_users_count(self):
-        count = await self.col.count_documents({})
+        count = await self.users.count_documents({})
         return count
 
 
     async def delete_user(self, user_id):
         try:
-            await self.user.delete_many({"id": user_id})
+            await self.users.delete_many({"id": user_id})
         except:
             pass
