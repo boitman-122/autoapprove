@@ -86,3 +86,6 @@ async def broadcast(c, m):
         await asyncio.sleep(0.5)
 
     await sts.edit(f'**BroadCast Completed:**\n\nTotal: {total}\nSuccess: {success}\nFailed: {failed}')
+
+if __name__ == '__main__':
+    app.run()
