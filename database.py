@@ -9,7 +9,7 @@ class Database:
         self.users = self.db.users
 
 
-    async def is_user_exit(self, user_id):
+    async def is_user_exist(self, user_id):
         user = await self.users.find_one({'id': user_id})
         return True if user else False
     
