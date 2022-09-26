@@ -8,7 +8,7 @@
       "accept",
       "bot"
     ],
-    "repository": "https://github.dev/boitman-122/autoapprove",
+    "repository": "https://github.com/boitman-122/autoapprove",
     "env": {
       "WEBHOOK": {
         "description": "Setting this to ANYTHING will enable webhooks when in env mode",
