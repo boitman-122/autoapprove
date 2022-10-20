@@ -55,7 +55,8 @@ I can approve users in Groups/Channels.Add me to your chat and promote me to adm
     await m.reply_photo(
         photo='https://telegra.ph/file/2f8ce02ad5148d9e1dbd3.jpg', 
         caption=text,
-        reply_markup=InlineKeyboardMarkup(button)
+        reply_markup=InlineKeyboardMarkup(button),
+        quote=True
     )
 
 
